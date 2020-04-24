@@ -42,13 +42,17 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm order-sm-last">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
 
-                <div class="col-12 col-sm-3 align-self-center order-sm-first">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm-3 align-self-center">
+                    <button type="button" class="btn btn-warning btn-sm"> Reserve Table </button>
                 </div>
             </div>
         </div>
@@ -59,16 +63,14 @@
             <div class="col-12 col-sm-4 order-sm-first col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
+
             <div class="col col-sm roder-sm-last col-md">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center"
-                            src="img/uthappizza.png" alt="Uthappizza">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
+
                     <div class="media-body">
-                        <h2 class="mt-0"> Uthappizza <span class="badge badge-pill badge-secondary">$4.99</span> <span class="badge badge-danger"> HOT </span> </h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
-                            Italian pizza, topped with Cerignola olives, ripe vine
-                            cherry tomatoes, Vidalia onion, Guntur chillies and
-                            Buffalo Paneer.</p>
+                        <h2 class="mt-0"> Uthappizza <span class="badge badge-pill badge-secondary"> $4.99 </span> <span class="badge badge-danger"> HOT </span> </h2>
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
             </div>
@@ -78,9 +80,16 @@
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+
+            <div class="col col-sm roder-sm-last col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
+    
+                    <div class="media-body">
+                        <h2 class="mt-0"> Weekend Grand Buffet <span class="badge badge-danger"> NEW </span> </h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -159,11 +168,11 @@
                                     <label for="datetime" class="col-12 col-sm-4 col-form-label">Date and Time</label>
                             
                                     <div class="col-5 col-md-5">
-                                        <input type="date" class="form-control" id="date" name="date" placeholder="dd/mm/aa">
+                                        <input type="date" class="form-control" id="date" name="date" placeholder="">
                                     </div>
 
                                     <div class="col-5 col-md-3">
-                                        <input type="time" class="form-control" id="time" name="time" placeholder="hh:mm:ss">
+                                        <input type="time" class="form-control" id="time" name="time" placeholder="">
                                     </div>
                                 </div>
 
