@@ -13,7 +13,7 @@ class DishDetail extends Component {
                 return (
                     <li key={comm.id}>
                         <p> {comm.comment} </p>
-                        <p> -- {comm.author}, {comm.date} </p>
+                        <p> -- {comm.author}, {new Intl.DateTimeFormat('en-US', {year:'numeric', month:'short', day:'2-digit'}).format(new Date(Date.parse(comm.date)))} </p>
                     </li>
                 );
             });
@@ -59,7 +59,9 @@ class DishDetail extends Component {
 
         if (dish != null) {
             return (
-                this.renderDish(dish)
+                <div class="container">
+                    {this.renderDish(dish)}
+                </div>
             );
         }
 
